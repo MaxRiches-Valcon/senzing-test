@@ -3,7 +3,8 @@
 from senzing import G2Engine, G2Exception
 
 # REPLACE /home/user/tryme with the path to your Senzing project created in the quickstart
-config = '{ "PIPELINE": { "CONFIGPATH": "/home/user/tryme/etc", "SUPPORTPATH": "/home/user/tryme/data", "RESOURCEPATH": "/home/user/tryme/resources" }, "SQL": { "CONNECTION": "sqlite3://na:na@/home/user/tryme/var/sqlite/G2C.db" } }'
+config = '{"PIPELINE" : {"CONFIGPATH" : "/etc/opt/senzing","RESOURCEPATH" : "/opt/senzing/g2/resources","SUPPORTPATH" : "/opt/senzing/data"},"SQL" : { "CONNECTION" : "postgresql://max:mugrumph1@172.17.0.1:5432:testdb" }}'
+
 
 record = '{ "NAME_FULL": "JOHN SMITH", "ADDR_FULL": "123 Main St, Las Vegas NV" }'
 
